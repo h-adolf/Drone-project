@@ -1,0 +1,50 @@
+.drone-show-section {
+    background: #fdfbfb;
+    color: #141313;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .drone-show-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    scrollbar-width: none; /* Hide scrollbar */
+  }
+  
+  .drone-show-slider::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Webkit */
+  }
+  
+  .drone-show-card {
+    flex: 0 0 300px;
+    margin-right: 20px;
+    background: #faf9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s;
+  }
+  
+  .drone-show-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .event-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .check-event {
+    color: rgb(0, 179, 255);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

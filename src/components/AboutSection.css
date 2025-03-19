@@ -1,0 +1,120 @@
+/* AboutSection.css */
+
+/* Basic layout for the section */
+.elementor-section {
+    position: relative;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding: 60px 0;
+  }
+  
+  .elementor-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .elementor-column {
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  
+  /* Two equal columns */
+  .elementor-col-50 {
+    width: 50%;
+  }
+  
+  /* Spacer widget styling */
+  .elementor-spacer {
+    width: 100%;
+    height: 30px; /* Adjust as needed */
+  }
+  
+  /* Title Styling */
+  .sc_title_default {
+    margin-bottom: 20px;
+  }
+  
+  .sc_item_subtitle {
+    font-size: 16px;
+    color: #888;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .sc_item_title {
+    font-size: 32px;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Text Editor Styling */
+  .elementor-widget-text-editor p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Button Styling */
+  .sc_button {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sc_button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Fade In Up Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 40px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .drone-media-fadeinup {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  /* Infinite Rotate Animation */
+  @keyframes infiniteRotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .drone-media-infinite-rotate {
+    animation: infiniteRotate 20s linear infinite;
+  }
+  
+  /* Positioning for absolute widgets */
+  .elementor-widget__width-auto.elementor-absolute {
+    position: absolute;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .elementor-col-50 {
+      width: 100%;
+    }
+    .elementor-container {
+      flex-direction: column;
+    }
+  }
+  

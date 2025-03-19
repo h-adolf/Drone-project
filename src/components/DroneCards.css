@@ -1,0 +1,71 @@
+/* Main container with background transition */
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.5s ease-in-out;
+  padding: 20px;
+}
+
+/* Individual card */
+.card {
+  position: relative;
+  width: 20%;
+  min-width: 200px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+/* Card number styling */
+.card-number {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+}
+
+/* Card title */
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Card extra content (hidden by default) */
+.card-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease, max-height 0.5s ease;
+}
+
+/* Active card effect */
+.card.active {
+  background: rgba(0, 0, 255, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Show content on active */
+.card.active .card-content {
+  opacity: 1;
+  max-height: 200px;
+  transform: translateY(0);
+}
+
+/* Link styling */
+.card-link {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  display: inline-block;
+  margin-top: 10px;
+}
