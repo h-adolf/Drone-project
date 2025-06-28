@@ -6,29 +6,29 @@ const droneShows = [
   {
     title: "Drone Show for couple's 40th Anniversary",
     description: "40 years of togetherness celebrated in the most beautiful way as all the friends and family members were awestruck by...",
-    image: "public/images/gallery1.jpg",
+    image: "/images/gallery1.jpg",
   },
   {
     title: "Drone Show for RIT Chennai's Cultural Fest",
     description: "The ambiance of Chennai with novel designs made the first-ever drone light show of Tamil Nadu a technological marvel...",
-    image: "public/images/gallery2.jpg",
+    image: "/images/gallery2.jpg",
   },
   {
     title: "Civil20India2023 Drone Show",
     description: "A fusion of technology, innovation and sustainability witnessed at Coimbatore as the sky of Amrita Vishwa Vidyapeetham...",
-    image: "public/images/gallery3.jpg",
+    image: "/images/gallery3.jpg",
   },
 ];
 
 const droneOptions = [
-  { label: "100 Drones", video: "public/100-butterfly.mp4" },
-  { label: "200 Drones", video: "public/200-drone.mp4" },
-  { label: "300 Drones", video: "public/300-drone.mp4" },
-  { label: "400 Drones", video: "public/400-drone.mp4" },
-  { label: "500 Drones", video: "public/500-drone.mp4" },
-  { label: "1000 Drones", video: "public/1000-drone.mp4" },
-  { label: "2000 Drones", video: "public/2000-drone.mp4" },
-  { label: "2500 Drones", video: "public/2500-drone.mp4" },
+  { label: "100 Drones", video: "/100-butterfly.mp4" },
+  { label: "200 Drones", video: "/200-drone.mp4" },
+  { label: "300 Drones", video: "/300-drone.mp4" },
+  { label: "400 Drones", video: "/400-drone.mp4" },
+  { label: "500 Drones", video: "/500-drone.mp4" },
+  { label: "1000 Drones", video: "/1000-drone.mp4" },
+  { label: "2000 Drones", video: "/2000-drone.mp4" },
+  { label: "2500 Drones", video: "/2500-drone.mp4" },
 ];
 
 const Service: React.FC = () => {
@@ -70,7 +70,7 @@ const Service: React.FC = () => {
           muted
           className="absolute top-0 left-0 w-full h-full object-cover opacity-90"
         >
-          <source src="public/service-page-bg.mp4" type="video/mp4" />
+          <source src="/service-page-bg.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40"></div>

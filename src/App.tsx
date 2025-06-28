@@ -31,7 +31,7 @@ const Home = () => {
       <Services />
       <AboutSection />
       <DroneCards />
-      <SidePopupButton text="Book Drone Show with us" postion="450px" />
+      <SidePopupButton text="Book Drone Show " postion="450px" />
       <SidePopupButton text="Fly With Us" postion="520px" />
     </>
   );
